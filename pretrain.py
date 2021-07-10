@@ -56,6 +56,7 @@ def main():
     #cmd.append("optimization.max_update=2000000")
     cmd.append("dataset.num_workers=" + str(NUM_CPU))
     cmd.append("dataset.max_tokens=" + str(args.batch_size))
+    cmd.append("common.tensorboard_logdir=tensorboard/")
     cmd.append("--config-dir config/pretraining")
     cmd.append("--config-name wav2vec2_base_librispeech")
     cmd = ' '.join(cmd)
