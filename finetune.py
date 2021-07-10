@@ -130,7 +130,7 @@ def main():
     #cmd.append("optimization.max_update=100000")
     #cmd.append("dataset.validate_after_updates=0")
     #cmd.append("model.freeze_finetune_updates=0")
-    cmd.append("common.tensorboard_logdir=tensorboard/")
+    cmd.append("common.tensorboard_logdir=/content/tensorboard/")
     cmd.append("--config-dir config/finetuning")
     cmd.append("--config-name " + config_name)
     cmd = ' '.join(cmd)
